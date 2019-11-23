@@ -38,6 +38,7 @@ class UsersController < ApplicationController
 
   private
 
+  #refactored out to re-use this code above; private so cannot be accessed outside class
   def user_params
     params.require(:user).permit(:name, :email)
   end
