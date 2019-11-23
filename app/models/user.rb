@@ -3,7 +3,7 @@ class User < ApplicationRecord
 
     has_many :artworks,
         primary_key: :id, #user's id
-        forein_key: :artist_id, 
+        foreign_key: :artist_id, 
         class_name: :Artwork,
         dependent: :destroy
 end
